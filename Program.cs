@@ -12,7 +12,33 @@ class Program
     {
         Console.Clear();
 
-        /*#### Questão 1 ####
+        /*#### Questão 1 ####*/
+
+        int[] listaDeNumeros = new int[3];
+
+        for (var i = 0; i < 3; i++)
+        {
+            Console.Write($"Digite o {i + 1}° número: ");
+            listaDeNumeros[i] = int.Parse(Console.ReadLine());
+        }
+
+        if (listaDeNumeros[0] > listaDeNumeros[1] && listaDeNumeros[1] > listaDeNumeros[2])
+        {
+            Console.WriteLine($"{listaDeNumeros[0]}, {listaDeNumeros[1]}, {listaDeNumeros[2]}");
+        }else if(listaDeNumeros[1] > listaDeNumeros[0] && listaDeNumeros[0] > listaDeNumeros[2])
+        {
+            Console.WriteLine($"{listaDeNumeros[1]}, {listaDeNumeros[0]}, {listaDeNumeros[2]}");
+        }
+        else if(listaDeNumeros[2]>listaDeNumeros[0] && listaDeNumeros[0] > listaDeNumeros[1])
+        {
+            Console.WriteLine($"{listaDeNumeros[2]}, {listaDeNumeros[0]}, {listaDeNumeros[1]}");
+        }
+        else
+        {
+            Console.WriteLine($"{listaDeNumeros[2]}, {listaDeNumeros[1]}, {listaDeNumeros[0]}");
+        }
+
+        /*#### Questão 1 #### - Resolução Alvaro
 
         bool exit = true;
         while (exit)
