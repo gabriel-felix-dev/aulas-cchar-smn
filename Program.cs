@@ -95,7 +95,7 @@ class Program
             Console.WriteLine("Aprovado!");
         }*/
 
-        /*#### Questão 5 ####*/
+        /*#### Questão 5 ####
 
         Console.WriteLine("Digite um número entre 1 e 100:");
         int numero = int.Parse(Console.ReadLine());
@@ -108,22 +108,32 @@ class Program
             numero = int.Parse(Console.ReadLine());
         }
 
-        var primeiradivisao = numero % 1;
-        var segundadivisao = numero % numero;
-        var terceiradivisao = numero % 2;
+        bool primo = true;
 
-        if (primeiradivisao == 0 && segundadivisao == 0 && terceiradivisao != 0)
+        if (numero == 1)
+        {
+            primo = false;
+        }
+        else
+        {
+            for (int i = 2; i * i <= numero; i++)
+            {
+                if (numero % i == 0)
+                {
+                    primo = false;
+                    break;
+                }
+            }
+        }
+
+        if (primo)
         {
             Console.WriteLine($"O número {numero} é primo");
         }
         else
         {
-            Console.WriteLine($"O número {numero} não é primo.");
-        }
-
-        Console.WriteLine($"Primeira: {primeiradivisao}");
-        Console.WriteLine($"Segunda: {segundadivisao}");
-        Console.WriteLine($"Terceira: {terceiradivisao}");
+            Console.WriteLine($"O número {numero} não é primo");
+        }*/
 
     }
 
