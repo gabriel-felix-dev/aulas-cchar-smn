@@ -1,5 +1,6 @@
 ﻿using System.Diagnostics.CodeAnalysis;
 using System.Runtime.CompilerServices;
+using System;
 
 namespace aulas_charp_smn;
 
@@ -38,6 +39,34 @@ class Program
                     Console.WriteLine("Opção inválida. Tente novamente.");
                     break;
             }
+        }*/
+
+        /*#### Questão 2 ####
+
+        Console.WriteLine($"Informe a sua idade: ");
+        int idade = int.Parse(Console.ReadLine());
+
+        if (idade <= 0)
+        {
+            Console.WriteLine("Idade inválida");
+            System.Environment.Exit(0);
+        }
+
+        if (idade > 0 && idade < 13)
+        {
+            Console.WriteLine("Criança");
+        }
+        else if (idade >= 13 && idade < 18)
+        {
+            Console.WriteLine("Adolescente");
+        }
+        else if (idade >= 18 && idade < 60)
+        {
+            Console.WriteLine("Adulto");
+        }
+        else
+        {
+            Console.WriteLine("Idoso");
         }*/
 
         /*#### Questão 3 #### 
